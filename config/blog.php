@@ -15,6 +15,7 @@ return [
   'author' => 'Chuck Heintzelman',
   'page_image' => 'home-bg.jpg',
   'posts_per_page' => 10,
+  'contact_email' => env('MAIL_FROM'),
   'uploads' => [
     'storage' => 'local',
     'webpath' => '/uploads/',
