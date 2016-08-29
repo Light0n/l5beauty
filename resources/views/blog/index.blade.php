@@ -1,4 +1,4 @@
-<html>
+{{-- <html>
 <head>
   <title>{{ config('blog.title') }}</title>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
@@ -10,6 +10,7 @@
     <h5>Page {{ $posts->currentPage() }} of {{ $posts->lastPage() }}</h5>
     <hr>
     <ul>
+      {{dd($posts)}}
       @foreach ($posts as $post)
         <li>
           <a href="/blog/{{ $post->slug }}">{{ $post->title }}</a>
@@ -24,4 +25,4 @@
     {!! $posts->render() !!}
   </div>
 </body>
-</html>
+</html> --}}
