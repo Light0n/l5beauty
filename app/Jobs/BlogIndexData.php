@@ -64,8 +64,7 @@ class BlogIndexData extends Job implements SelfHandling
       'reverse_direction' => false,
       'tag' => null,
     ];
-  }
-
+  }    
   /**
    * Return data for a tag index page
    *
@@ -95,8 +94,7 @@ class BlogIndexData extends Job implements SelfHandling
       'page_image' => $page_image,
       'tag' => $tag,
       'reverse_direction' => $reverse_direction,
-      'meta_description' => $tag->meta_description ?: \
-          config('blog.description'),
+      'meta_description' => $tag->meta_description ?:config('blog.description'),
     ];
   }
 }
